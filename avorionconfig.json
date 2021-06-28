@@ -1,0 +1,126 @@
+[
+  {
+    "DisplayName": "Galaxy Name",
+    "Description": "The name of the galaxy, also used for the save path so keep it all lower case and no spaces or the gnomes will be upset. CHANGING THIS WILL RESULT IN A NEW GALAXY BEING CREATED",
+    "FieldName": "GalaxyName",
+    "Category": "Avorion Server",
+    "InputType": "text",
+    "ParamFieldName": "galaxy-name",
+    "IncludeInCommandLine": true
+
+  },
+  {
+    "DisplayName": "Admin Players",
+    "Description": "A list of Steam64 IDs for players that are in-game admins. [Find your Steam64 ID](https://steamidfinder.com/)",
+    "FieldName": "Admin",
+    "Category": "Avorion Server",
+    "InputType": "text",
+    "ParamFieldName": "admin",
+    "IncludeInCommandLine": true
+  },
+  {
+    "DisplayName": "Max Players",
+    "Description": "The Maximum number of players online at one time",
+    "FieldName": "MaxPlayers",
+    "Category": "Avorion Server",
+    "InputType": "number",
+    "ParamFieldName": "max-players",
+    "IncludeInCommandLine": true
+  },
+  {
+    "DisplayName": "Save Interval",
+    "Description": "The time between server saves, in seconds.",
+    "FieldName": "SaveInterval",
+    "Category": "Avorion Server",
+    "InputType": "number",
+    "ParamFieldName": "save-interval",
+    "IncludeInCommandLine": true
+  },
+  {
+    "DisplayName": "Server Name",
+    "Description": "The name of the server, shown in the server list.",
+    "FieldName": "ServerName",
+    "Category": "Avorion Server",
+    "InputType": "text",
+    "ParamFieldName": "server-name",
+    "IncludeInCommandLine": true
+  },
+  {
+    "DisplayName": "Seed",
+    "Description": "The random seed used for galaxy generation. Accepts upper and lower case letters and numbers (No spaces).",
+    "FieldName": "Seed",
+    "Category": "Avorion Server",
+    "InputType": "text",
+    "ParamFieldName": "seed",
+    "IncludeInCommandLine": true
+  },
+  {
+    "DisplayName": "Difficulty",
+    "Description": "The difficulty of the server.  Beginner: -3, Easy = -2, Normal = -1, Veteran = 0, Expert = 1, Hardcore = 2, Insane = 3",
+    "FieldName": "Difficulty",
+    "Category": "Avorion Server",
+    "InputType": "enum",
+    "ParamFieldName": "difficulty",
+    "IncludeInCommandLine": true,
+    "EnumValues": {
+      "-3": "-3",
+      "-2": "-2",
+      "-1": "-1",
+      "0": "0",
+      "1": "1",
+      "2": "2",
+      "3": "3"
+    }
+  },
+  {
+    "DisplayName": "Collision Damage",
+    "Description": "A multiplier for damage to colliding objects. 0 = No Damage, 1 = Full Damage",
+    "FieldName": "CollisionDamage",
+    "Category": "Avorion Server",
+    "InputType": "enum",
+    "ParamFieldName": "collision-damage",
+    "IncludeInCommandLine": true,
+    "EnumValues": {
+      "0": "0",
+      "0.25": "0.25",
+      "0.5": "0.5",
+      "0.75": "0.75",
+      "1": "1"
+    }
+  },
+  {
+    "DisplayName": "Same Start Sector",
+    "Description": "Indicates if all players should start in the same sector. If false, a random empty sector on the outer rim is populated and used as the home sector for each new player.",
+    "FieldName": "SameStartSector",
+    "Category": "Avorion Server",
+    "InputType": "checkbox",
+    "ParamFieldName": "same-start-sector",
+    "IncludeInCommandLine": true,
+    "EnumValues": {
+      "true": "true",
+      "false": "false"
+    }
+  },
+  {
+    "DisplayName": "Worker Threads",
+    "Description": "Number of concurrent threads that are used to update sectors (Increase this if you have multiple cores in your system for improved performance, however performance will suffer if set higher than available threads on your CPU).",
+    "FieldName": "Threads",
+    "Category": "Avorion Server",
+    "InputType": "number",
+    "ParamFieldName": "threads",
+    "IncludeInCommandLine": true
+  },
+  {
+    "DisplayName": "Server Listing",
+    "Description": "If the server is publicly listed in the browser/LAN.",
+    "FieldName": "Listed",
+    "Category": "Avorion Server",
+    "InputType": "checkbox",
+    "ParamFieldName": "listed",
+    "IncludeInCommandLine": true,
+    "EnumValues": {
+      "true": "true",
+      "false": "false"
+    }
+  }
+]
